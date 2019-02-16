@@ -11,12 +11,13 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Concurrency                                       | no            |no           |yes                      |              |           |
 | Floating-point                                    | via Softfloat |via Softfloat|no                       |              |           |
 | Emulation                                         | 40min Linux   |via Haskell  |4min Linux               |              |           |
-| Emulation speed                                   | ??? IPS       |??? IPS      |??? IPS                  |              |           |
+| ...emulation speed                                | ??? IPS       |??? IPS      |300K on Intel i7-7700    |              |           |
 | Use as test oracle in tandem verification         | yes           |no           |yes                      |              |           |
 | Theorem-prover definitions                        | via hs-to-coq?|no           |Coq,Isa,HOL4             |              |           |
 | Use in documentation                              | to LaTeX      |to text      |in RISC-V ISA            |              |           |
 | Use in test generation                            | (at UPenn?)   |no           |yes                      |              |           |
 | Use for concurrency-model litmus test evaluation  | no            |no           |yes                      |              |           |
+| Test coverage - riscv-tests suite                 | ???           |???          |yes                      |              |           |
 | Test coverage - RISC-V compliance tests           | all           |almost all   |no (those are RV32)      |              |           |
 | Test coverage - OS boots                          | Linux,FreeRTOS|no           |Linux,FreeBSD,seL4       |              |           |
 | Test coverage - Concurrency litmus tests          | no            |no           |yes                      |              |           |

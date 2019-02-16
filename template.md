@@ -33,6 +33,10 @@
 
 ### Privilege levels
 
+### Parameterisation of the model (on extensions, implementation choices, etc.)
+
+### What is not currently modelled
+
 ----------------------------------------------------------------
 ## Current specification of assembly syntax and encoding
 
@@ -45,7 +49,7 @@
 ----------------------------------------------------------------
 ## Current capabilities (what the specification and associated tooling generates and enables)
 
-### Emulation
+### Emulation (including emulation speed)
 
 ### Use as test oracle in tandem verification
 
@@ -60,6 +64,8 @@
 
 ----------------------------------------------------------------
 ## Current test coverage
+
+### Basic (riscv-tests) tests
 
 ### RISC-V compliance tests
 
@@ -92,3 +98,6 @@
 ### snapshot of "How to Compile/Run Guide" for those who want to execute a model on programs (ISA tests, Compliance tests, other programs)
 
 ### snapshot of "How to Extend Guide" for those who want to extend the model to capture new ISA extensions/experiments.
+
+
+## Caveats and limitations (anything potential users should be aware of that is not clear above)
