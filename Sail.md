@@ -132,7 +132,7 @@ emulator can be linked against the Spike emulator for execution with
 per-instruction tandem-verification.
 
 The C emulator, for the Linux boot, currently runs at approximately
-300000 IPS on an Intel i7-7700 (when detailed per-instruction tracing
+300 KIPS on an Intel i7-7700 (when detailed per-instruction tracing
 is disabled), and there are many opportunities for future optimisation
 (our Sail MIPS model runs at approximately 1 MIPS). This enables us to
 boot Linux in about 4 minutes, and FreeBSD in about 2 minutes. Memory
@@ -231,6 +231,10 @@ Imperas. To date, we see only sequentially consistent behaviour there.
 
 
 ## Current test coverage
+
+### Basic (riscv-tests) tests 
+
+Yes
 
 ### RISC-V compliance tests
 
@@ -385,3 +389,9 @@ to compile and run the C and OCaml emulators on ELF files and OS binaries.
 
 A [guide](https://github.com/rems-project/sail-riscv/blob/master/doc/ExtendingGuide.md)
 to extending the model is provided in the repository.
+
+
+
+## Caveats and limitations (anything potential users should be aware of that is not clear above)
+
+none
