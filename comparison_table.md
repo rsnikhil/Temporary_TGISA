@@ -2,11 +2,12 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 
 |                                                   | Forvis        | Grift       | Sail                    | Riscv-semantics     |           | 
 | ------------------------------------------------- | ------------- | ----------- | ------------------------| ------------------- | --------- |
+| Description                                       | [Forvis](https://github.com/rsnikhil/Temporary_TGISA/blob/master/Forvis.md)    | [Grift](https://github.com/rsnikhil/Temporary_TGISA/blob/master/GRIFT.md)   | [Sail](https://github.com/rsnikhil/Temporary_TGISA/blob/master/Sail.md)                | [Riscv-semantics](https://github.com/rsnikhil/Temporary_TGISA/blob/master/riscv-haskell-semantics.md) |           | 
 | Author/Group                                      | Bluespec      |Galois       |SRI/Cambridge            | MIT                 |           |   
 | Licence                                           | MIT           |GPL3         |BSD                      | MIT                 |           |
 | Metalanguage                                      | Haskell       |Haskell      |Sail                     | Haskell             |           |
 | Functional coverage - Base ISA and extensions     | RV32/64IMAFDC |RV32/64GC    |RV64IMAC                 | RV32/64IMAF         |           |
-| Functional coverage - Privilege levels            | MUS,Sv32,39,48|M            |MUS,Sv39                 | SV39                |           |
+| Functional coverage - Privilege levels            | MUS,Sv32,39,48|M            |MUS,Sv39                 | Sv39                |           |
 | Specification of assembly syntax and encoding     | no            |pp           |yes                      | no                  |           |
 | Concurrency                                       | no            |no           |yes                      | no                  |           |
 | Floating-point                                    | via Softfloat |via Softfloat|no                       | Softfloat           |           |
