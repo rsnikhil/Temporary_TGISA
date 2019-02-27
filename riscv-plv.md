@@ -2,7 +2,7 @@
 
 ## Name (e.g. Sail Model)
 
-riscv-semantics (just the repo name chosen for MIT's Haskell-based semantics when the project started!)
+riscv-plv
 
 ----------------------------------------------------------------
 ## Authors (with institutions)
