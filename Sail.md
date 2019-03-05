@@ -83,17 +83,16 @@ semantics, which lets one compute all the concurrency-model-allowed behaviours o
 
 ## Current functional coverage (what's modelled now, in RISC-V code and in English)
 
-- The model covers RV64 IMAC (base 64-bit integer, with the standard
+- The model covers RV32 and RV64 IMAC (base 32-bit and 64-bit integer architectures, with the standard
   multiply/divide, atomic, and compressed extensions), M/S/U (machine,
-  supervisor and user privilege) modes, and Sv39-mode (39-bit virtual
-  addressing) address translation.  Operation in M-only, M/U and M/S/U
+  supervisor and user privilege) modes, and the Sv32, Sv39, and Sv48 modes
+  of address translation.  Operation in M-only, M/U and M/S/U
   modes are all supported.  The model includes a specification for the
   draft 'N' extension for user-level interrupt handling.
 
 - The model supports parameterization for platform-specific implementation choices.
 
-- The model does not currently cover RV32 and RV128, the Sv32 and Sv48
-  address translation modes, floating-point for the F and D standard
+- The model does not currently cover RV128, floating-point for the F and D standard
   extensions, encodings for HINT instructions, PMP/PMA physical memory
   attributes and protection, event and performance counter support,
   the hypervisor mode for virtualization,
@@ -238,16 +237,16 @@ Yes
 
 ### RISC-V compliance tests
 
-The current compliance tests only support RV32 targets, while the Sail
-model covers RV64.  We are working on adding RV32 support, and intend
-to support use in the compliance tests as a test target and
-as a golden model.
+Both the C and OCaml emulators support use as a test target in the
+compliance-test framework, and we intend to support use as a golden model.
 
 ### OS boot testing
 
-The C and OCaml emulators have been used to boot Linux and FreeBSD
+The 64-bit C and OCaml emulators have been used to boot Linux and FreeBSD
 up to the login prompt, including most of the standard startup scripts
 and programs, and the seL4 kernel running its test suite.
+OS boots for the 32-bit emulators are in progress.
+
 
 ### Concurrency litmus test testing
 
@@ -259,10 +258,9 @@ only concurrency test collection for RISC-V that we are aware of.
 
 ## Plans for future functional coverage
 
-We plan to add support for RV32 and the F and D standard
-floating-point extensions, the Sv32 and Sv48 address translation
-modes, support for HINT encodings, PMP/PMA physical memory attributes
-and protection, and the N user-level interrupt standard extension.
+We plan to add support for the F and D standard
+floating-point extensions, support for HINT encodings, PMP/PMA physical memory attributes
+and protection.
 This may be followed by support for the hypervisor mode.
 
 ## Plans for long-term access, maintenance, etc.

@@ -6,8 +6,8 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Author/Group                                      | Bluespec      |Galois                          |SRI/Cambridge            | MIT                 |           |   
 | Licence                                           | MIT           |GPL3                            |BSD                      | MIT                 |           |
 | Metalanguage                                      | Haskell       |Haskell                         |Sail                     | Haskell             |           |
-| Functional coverage - Base ISA and extensions     | RV32/64IMAFDC |RV32/64GC                       |RV64IMAC                 | RV32/64IMAF         |           |
-| Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv39                 | Sv39                |           |
+| Functional coverage - Base ISA and extensions     | RV32/64IMAFDC |RV32/64GC                       |RV32/RV64IMAC            | RV32/64IMAF         |           |
+| Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv32,39,48           | Sv39                |           |
 | Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  |           |
 | Concurrency                                       | no            |no                              |yes                      | no                  |           |
 | Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       |           |
@@ -20,7 +20,7 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Use in test generation                            | (at UPenn?)   |no                              |yes                      | no                  |           |
 | Use for concurrency-model litmus test evaluation  | no            |no                              |yes                      | no                  |           |
 | Test coverage - riscv-tests suite                 | ???           |yes                             |yes                      | yes                 |           |
-| Test coverage - RISC-V compliance tests           | all           |almost all                      |no (those are RV32)      | yes                 |           |
+| Test coverage - RISC-V compliance tests           | all           |almost all                      |yes                      | yes                 |           |
 | Test coverage - OS boots                          | Linux,FreeRTOS|no                              |Linux,FreeBSD,seL4       | Linux               |           |
 | Test coverage - Concurrency litmus tests          | no            |no                              |yes                      | no                  |           |
 
