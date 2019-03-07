@@ -12,7 +12,7 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Concurrency                                       | no            |no                              |yes                      | no                  |           |
 | Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       |           |
 | Emulation                                         | Haskell       | Haskell                        |generated C or OCaml     | Haskell             |           |
-| ...emulation speed                  | ??? IPS (40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ      |           |
+| ...emulation speed                  | ??? IPS (40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ (Linux boot)     |           |
 | Use as test oracle in tandem verification         | yes           |no                              |yes                      | yes                 |           |
 | Use for software coverage analysis                | ???           |yes                             |???                      | ???                 |           |
 | Theorem-prover definitions                        | via hs-to-coq?|no                              |Coq,Isa,HOL4             | hs-to-coq           |           |
