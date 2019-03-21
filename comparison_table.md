@@ -9,7 +9,7 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Functional coverage - Base ISA and extensions     | RV32/64IMAFDC |RV32/64GC                       |RV32/RV64IMAC            | RV32/64IMAF         | RV32 IMAFC |
 | Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv32,39,48           | Sv39                | Unstable   |
 | Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  | yes        |
-| Concurrency                                       | no            |no                              |yes                      | no                  | not yet    |
+| Concurrency                                       | no            |no                              |yes                      | no                  | no         |
 | Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       | Native implementation |
 | Emulation                                         | Haskell       | Haskell                        |generated C or OCaml     | Haskell             | Verilator, with Haskell-based emulator in the immediate words  |
 | ...emulation speed                  | ??? IPS (40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ (Linux boot)     | Not measured |
@@ -21,6 +21,6 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Use for concurrency-model litmus test evaluation  | no            |no                              |yes                      | no                  | no |
 | Test coverage - riscv-tests suite                 | ???           |yes                             |yes                      | yes                 | yes |
 | Test coverage - RISC-V compliance tests           | all           |almost all                      |yes                      | yes                 | yes |
-| Test coverage - OS boots                          | Linux,FreeRTOS|no                              |Linux,FreeBSD,seL4       | Linux               | not yet |
-| Test coverage - Concurrency litmus tests          | no            |no                              |yes                      | no                  | not yet |
+| Test coverage - OS boots                          | Linux,FreeRTOS|no                              |Linux,FreeBSD,seL4       | Linux               | no      |
+| Test coverage - Concurrency litmus tests          | no            |no                              |yes                      | no                  | no      |
 
