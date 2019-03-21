@@ -107,8 +107,8 @@ include future official features/extensions of the RISC-V ISA.
 ----------------------------------------------------------------
 ## Background on "What is a Formal Spec?  Why Have One?"
 
-A RISC-V ISA Formal Spec is a purely functional, formal, simple
-specification of the ISA.
+A RISC-V ISA Formal Spec is a purely functional, precise and formal,
+simple specification of the ISA.
 
 "Purely functional" means that it just describes the functional
 semantics of instructions, and does not try to capture implementation
@@ -137,16 +137,19 @@ also be used in official Compliance Testing to certify compliance.
 Raw execution speed of the formal spec when used as a
 simulator/emulator is desirable, but is secondary to the requirements
 listed above.  Nevertheless, for some use cases (such as tandem
-verification) execution speeds need to be good enough to execute
-non-trivial programs (such as booting an OS).
+verification) execution speed needs to be good enough to execute
+non-trivial programs (such as booting an OS and running apps under the
+OS).
 
 The five approaches each chose their host language for these reasons.
-It is very rare to choose large and complex languages that are
-difficult for formal reasoning (such as C++) for a formal spec.
+It is very rare to choose, for a formal spec, a large and complex
+language that is difficult for formal reasoning (such as C++), or to
+write it in a style that favors speed over simplicity and clarity.
 
 Note, some of the five formal specs here use the C++ Berkeley
 "softfloat" library to implement IEEE floating point.  This should not
 be seen as part of the formal spec, but just as a temporary
-placeholder to enable full-system simulation/emulation.
+placeholder to enable full-system simulation/emulation.  Each
+project's documentation may describe future plans for this.
 
 ----------------------------------------------------------------
