@@ -8,7 +8,7 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Metalanguage                                      | Haskell       |Haskell                         |Sail                     | Haskell             | Kami/Coq   |
 | Functional coverage - Base ISA and extensions     | RV32/64IMAFDC |RV32/64GC                       |RV32/RV64IMAC            | RV32/64IMAF         | RV32 IMAFC |
 | Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv32,39,48           | Sv39                | no         |
-| Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  | yes        |
+| Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  | no         |
 | Concurrency                                       | no            |no                              |yes                      | no                  | no         |
 | Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       | Native implementation of IEEE 754-2008 |
 | Emulation                                         | Haskell       | Haskell                        |generated C or OCaml     | Haskell             | Verilator  |
