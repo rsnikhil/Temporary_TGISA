@@ -83,7 +83,7 @@ The Public Review period is: March 21, 2019 through May 5, 2019
 
 There are two ways to provide feedback:
 
-- A quick, structured [questionnaire](https://docs.google.com/forms/d/1NWLxCQ3HIgeN5NGjsg-3xihOonVeOryvcwWMl4nWhhw/prefill)
+- A quick, structured [questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe7jQx_IM2EqvHewuAKiROZXupwsqRu_pCgc-5d0y26DKph7A/viewform)
     (should not take more than a few minutes).
 
 - You can provide more free-form comments using the "Issues" tab of this GitHub repo.
