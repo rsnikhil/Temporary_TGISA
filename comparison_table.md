@@ -10,7 +10,7 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv32,39,48           | Sv39                | no         |
 | Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  | yes        |
 | Concurrency                                       | no            |no                              |yes                      | no                  | no         |
-| Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       | Native implementation |
+| Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       | Native implementation of IEEE 754-2008 |
 | Emulation                                         | Haskell       | Haskell                        |generated C or OCaml     | Haskell             | Verilator  |
 | ...emulation speed                  | ??? IPS (40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ (Linux boot)     | Not measured |
 | Use as test oracle in tandem verification         | yes           |no                              |yes                      | yes                 | yes |
