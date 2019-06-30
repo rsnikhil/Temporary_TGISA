@@ -5,7 +5,7 @@ A table of the easily summarisable aspects of the RISC-V Formal ISA model compar
 | Link to description                               | [Forvis](https://github.com/rsnikhil/Temporary_TGISA/blob/master/Forvis.md)    | [Grift](https://github.com/rsnikhil/Temporary_TGISA/blob/master/GRIFT.md)   | [Sail](https://github.com/rsnikhil/Temporary_TGISA/blob/master/Sail.md)                | [Riscv-plv](https://github.com/rsnikhil/Temporary_TGISA/blob/master/riscv-plv.md) | [Kami](https://github.com/sifive/RiscvSpecFormal)          | 
 | Author/Group                                      | Bluespec      |Galois                          |SRI/Cambridge            | MIT                 | SiFive     |   
 | Licence                                           | MIT           |GPL3                            |BSD                      | MIT                 | Apache 2.0 |
-| Metalanguage                                      | Haskell       |Haskell                         |Sail                     | Haskell             | Kami/Coq   |
+| Metalanguage                                      | Haskell       |embedded DSL in Haskell         |Sail                     | Haskell             | Kami/Coq   |
 | Functional coverage - Base ISA and extensions     | RV32/64IMAFDC |RV32/64GC                       |RV32/RV64IMAC            | RV32/64IMAF         | RV32 IMAFC |
 | Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv32,39,48           | Sv39                | no         |
 | Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  | no         |
